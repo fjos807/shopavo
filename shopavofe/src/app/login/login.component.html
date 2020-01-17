@@ -1,0 +1,23 @@
+<div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <form action="" method="" class="col-12 validate-form" name="loginForm" novalidate>
+            <h1 class="mb-3">Iniciar Sesión</h1>
+            <div class="form-group">
+                <input type="text" name="username" class="form-control form-control-lg"
+                    placeholder="Nombre de usuario" required>
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" class="form-control form-control-lg" placeholder="Contraseña" minlength="8" required>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-lg">Ingresar <i class="fas fa-sign-in-alt"></i></button>
+            </div>
+            <div class="container pass-manage">
+                <div> <a routerLink="/forgot-password">¿Olvidó su contraseña?</a></div>
+            </div>
+        </form>
+        <div class="modal-footer create-account">
+            <p>¿No tiene una cuenta? </p><a routerLink="/register">Crear una cuenta</a>
+        </div>
+    </div>
+</div>

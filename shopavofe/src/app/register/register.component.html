@@ -1,0 +1,37 @@
+<div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <form action="" method="" class="col-12 validate-form" novalidate>
+            <h1 class="mb-3">Registrarse</h1>
+            <div class="form-row">
+                <div class="form-group col-md">
+                    <input type="text" class="form-control" name="firstName" placeholder="Nombre" required>
+                </div>
+                <div class="form-group col-md">
+                    <input type="text" class="form-control" name="lastName" placeholder="Apellido" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md">
+                    <input type="text" class="form-control" name="username" placeholder="Nombre de usuario" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md">
+                    <input type="password" class="form-control" name="password" placeholder="Contraseña"
+                        pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" minlength="8" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md">
+                    <input type="email" class="form-control" name="email" placeholder="Correo electrónico" required>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-lg">Registrarse <i class="fas fa-user-plus"></i></button>
+            </div>
+        </form>
+        <div class="modal-footer signin">
+            <p>¿Ya tiene una cuenta? </p><a routerLink="/login">Ingresar</a>
+        </div>
+    </div>
+</div>
