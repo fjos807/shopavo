@@ -10,4 +10,4 @@ const productSchema = new Schema({
     type: { type: String, required: true}
 });
 
-module.exports = mongoose.model('Employee', productSchema);
+module.exports = mongoose.model('Product', productSchema);
