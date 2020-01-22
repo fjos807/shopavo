@@ -1,0 +1,64 @@
+.filters {
+  background-color: rgb(30, 30, 30);
+  padding: 20px;
+  position: absolute;
+  top: 60px;
+  left: 5px;
+  right: 1150px;
+  bottom: 60px;
+}
+
+button {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: rgb(44, 44, 44);
+  color: #03A9F4;
+}
+
+button:hover {
+  color: #81D4FA;
+}
+
+input[type=search]{
+  background-color: rgb(44, 44, 44);
+  margin: 0px 12px 15px 0px;
+  padding: 10px;
+  border: none;
+  transition: border 0.5s;
+  color: #B3E5FC;
+}
+
+label {
+  color: #81D4FA;
+}
+
+select{
+  background-color: rgb(44, 44, 44);
+  color: #B3E5FC;
+}
+
+.form-control::placeholder {
+  text-align: center;
+  color: #B3E5FC
+}
+
+.form-control:focus {
+  box-shadow: none;
+  color: #B3E5FC;
+}
+
+.map-container {
+  position: absolute;
+  top: 60px;
+  left: 400px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.map-frame {
+  height: 92%;
+}
+
+#map {
+  height: 100%;
+}

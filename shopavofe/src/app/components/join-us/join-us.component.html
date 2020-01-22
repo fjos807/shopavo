@@ -1,0 +1,51 @@
+<div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <form action="" method="" class="col-12 validate-form" novalidate>
+            <h1 class="mb-3">Unirse a Shopavo</h1>
+            <p>Registre su compañía en nuestra plataforma y tenga mayor visibilidad en el mercado.</p>
+            <div class="form-row">
+                <div class="form-group col-md">
+                    <input type="text" class="form-control" name="firstName" placeholder="Nombre" required>
+                </div>
+                <div class="form-group col-md">
+                    <input type="text" class="form-control" name="lastName" placeholder="Apellido" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md">
+                    <input type="email" class="form-control" name="email" placeholder="Correo electrónico" required>
+                </div>
+                <div class="form-group col-md">
+                    <input type="text" class="form-control" name="telephone" placeholder="Teléfono" pattern="[0-9]{8}"
+                        maxlength="8" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md">
+                    <input type="text" class="form-control" name="companyName" placeholder="Nombre de la empresa"
+                        required>
+                </div>
+            </div>
+            <p>Seleccione en el mapa la ubicación de su compañía para completar los siguientes valores</p>
+            <div class="form-row">
+                <div class="form-group col-md">
+                    <input type="text" class="form-control" name="latitude" placeholder="Latitud" readonly
+                        required>
+                </div>
+                <div class="form-group col-md">
+                    <input type="text" class="form-control" name="longitude" placeholder="Longitud" readonly
+                        required>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-lg">Enviar datos <i class="fas fa-envelope"></i></button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="map-container">
+    <div class="map-frame">
+
+        <div id="map"></div>
+    </div>
+</div>
