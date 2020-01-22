@@ -1,0 +1,23 @@
+h2{
+  color: aliceblue;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.card{
+  border: none;
+}
+
+.card-body{
+  background-color: rgb(30, 30, 30);
+}
+
+.card-footer{
+  background-color: rgb(38, 38, 38);
+  display: flex;
+  justify-content: right;
+}
+
+p{
+  color: aliceblue;
+}

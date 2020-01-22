@@ -22,6 +22,13 @@ businessCtrl.addNewBusiness = async (req, res, next) => {
     res.json({status: 'Business created'});
 };
 
+businessCtrl.getBusiness = async (req, res, next) => {
+    console.log(req.params);
+    const { id } = req.params;
+    const business = await businessModel.findById(id);
+    res.json(business);
+}
+
  businessCtrl.getDataBusiness = function(){
 
  }

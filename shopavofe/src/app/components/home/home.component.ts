@@ -35,12 +35,12 @@ export class HomeComponent implements AfterViewInit {
 
     tiles.addTo(this.map);
 
-    this.businessService.getBusiness().subscribe(res => {
+    this.businessService.getAllBusiness().subscribe(res => {
       for (let i = 0; i < ((res as Business[]).length); i++){
         const business = res[i] as Business;
         const latLag = business.location as number[];
         const marker = L.marker([latLag[0], latLag[1]]).addTo(this.map);
-        marker.bindPopup(business.name);
+        marker.bindPopup('<a href="/store-products/' + business._id + '" class="nav-link">' + business.name + '</a>');
       }
     });
 

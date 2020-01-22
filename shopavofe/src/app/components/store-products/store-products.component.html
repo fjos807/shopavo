@@ -1,0 +1,30 @@
+<h2 id="storeName"></h2>
+<div>
+  <div *ngIf="storeProducts.length; else noItems">
+    <div class="row">
+      <div *ngFor="let item of storeProducts" class="col col-sm-12 col-md-4 my-3">
+        <div class="card">
+          <div class="card-body">
+            <h5>{{ item.name }}</h5>
+            <span>{{ item.price }}</span>
+          </div>
+          <div class="card-footer">
+            <a
+              class="btn btn-success text-light btn-add-cart"
+              data-toggle="modal"
+              >Agregar al carrito</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ng-template #noItems>
+    <div class="text-center">
+      <p class="text-muted">
+
+        De momento no hay artículos para esta tienda
+      </p>
+    </div>
+  </ng-template>
+</div>
